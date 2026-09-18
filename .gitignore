@@ -1,0 +1,14 @@
+/cache/
+/lib/
+/libs/
+.renpy/
+
+/saves/
+
+game/cache/
+game/saves/
+**/*.pyc
+**/*.rpyb
+**/*.rpyc
+
+instructions.txt

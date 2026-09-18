@@ -1,0 +1,1573 @@
+label epilogue:
+
+    #Guys, sorry, i don't know how to save this just retype it again you'll be alright.
+
+    #I recomended save your playtrough because engine don't save player_name my knowledge of renpy isn't enough to fix it maybe sooner.
+
+    #Also you can text me, if you know how to do it.
+
+    if not player_name:
+        jump pnc
+
+    play music kambo_mood loop
+
+    "Я Камбо, хах, так тупо просто, как будто я с кем-то говорю."
+
+    "Прошло 2 года после ее смерти, я вроде отвык. Я купил 24/7, и теперь мы с Флинном отмываем тот миллиард у старца."
+
+    "Оказывается, нас реально заказали."
+
+    "После выхода из больницы мы с Флинном пришли к тому дому, его снесли, тело не нашли. Но мы с ним нашли письмо, от 'Бати' мы хз, кто этот батя, но мы найдем его когда-нибудь."
+   
+    if deal:
+        "Помимо Флинна, я был на консультациях с Павелом."
+        "Он помог мне, спасибо ему."
+    
+    elif deal_2:
+        "Помимо Флинна, мы тусовались с Алексеем."
+        "Спасибо ему, благодаря ему я поправился."
+    
+    scene bg room2 with fade
+    
+    "Это дом Флинна, я в нем живу месяц. Мне стало 18 и я съехал от отца, но есть одна проблема, что мне кажется я близок к разгадке."
+    
+    "А еще у меня появилась новая сестра, Эйлин, отец сам не свой был последний год только что и бил меня,\nпоэтому я съехал."
+    "наверное, он бьет новую жену, мою мачеху - мать Эйлин."
+    
+    "Мне надо что-то делать..."
+
+    "Думаю завтра обсудить это с Флинном, он щас на работе, я не могу."
+
+    "Напишу-ка ему."
+
+    $ quick_menu = False
+
+    $ _game_menu_screen = None
+
+    $ nvl_mode = "phone"
+
+    nvl clear
+
+    c_nvl "Здарова Флинн."
+
+    fl_nvl "Привет."
+
+    c_nvl "Ты в 24/7?"
+
+    fl_nvl "Да, а что, что-то случилось?"
+
+    c_nvl "Да, Надо завтра обсудить."
+
+    fl_nvl "Окей."
+
+    $ quick_menu = True
+
+    $ _game_menu_screen = "save"
+
+    $ nvl_mode = "classic"
+
+    nvl clear
+
+    "Ну, я его предупредил, буду ждать его пока что."
+
+    stop music fadeout 1.0
+
+    scene black with fade
+
+    pause 3
+
+    scene bg room2 with fade
+
+    "Я проснулся от звука двери."
+
+    c "Флинн, ты дома?"
+
+    fl "Да!"
+
+    c "Пойди."
+
+    fl "Окей."
+    
+    pause 3
+    
+    show fl1 at center with dissolve
+
+    fl "Привет."
+
+    c "Здарова."
+
+    fl "О чем хотел поговорить?"
+
+    c "Есть одно дело, поможешь?"
+
+    fl "Рассказывай."
+
+    c "Мой отец, держит в плену мою новую сестру и мою мачеху. Мне нужно их спасти, поможешь?"
+
+    fl "А у тебя план есть?"
+
+    c "Да, все просто, надень перчатки на всякий случай и отвлеки отца, а я возьму их, понял?"
+
+    fl "Хммм, ладно давай."
+
+    c "Ну погнали."
+
+    scene black with fade
+
+    pause 3
+
+    scene bg village with fade
+
+    c "Мы возле дома, я звоню в звонок."
+
+    play sound housebell
+
+    pause 3
+
+    c "БЕЖИМ!"
+
+    fl "Все спрячемся тут, давай на счет..."
+
+    show f1 at center with dissolve
+
+    f "Кто тут?"
+
+    c "Давай Флинн, я верю в тебя."
+
+    show fl5 at l with dissolve
+
+    fl "Ну, здравствуйте."
+
+    f "Ты?"
+
+    fl "Мне тут одна птичка нашептала, что вы избиваете своих детей и морите их в подвале."
+
+    f "Брехня, кто тебе это сказал, сопляк?"
+
+    show k1 at r with dissolve
+
+    c "Я."
+
+    f "Ооо, да вы и впрямь упрямы, Хочешь расскажу секрет?"
+
+    c "Какой?"
+    
+    f "Я водил мафию в Майами, я переехал сюда, я не русский и еще девочка...{w} Маша."
+    
+    c "Маша..."
+    
+    f "Да, помните, деда?"
+    
+    "Стой..."
+    
+    c "Так ты..."
+    
+    c "Без вариантов, он - 'батя'"
+    
+    fl "Сука. Да кем ты себя возомнил, твой сын чуть не умер, а твою дочь изнасиловали, ты в порядке?"
+    
+    f "Молокосос, мне плевать на него, на тебя, но Маша, я любил Машу, я хотел сделать ее женщиной."
+    f "но тут нет нормальных людей, поэтому мой знакомый Сэм Метти, тот старик сделал это, а вас я хотел сдать в плен к нам, вы мешали девочке."
+    
+    c "ТЫ СУКА! Я ТЕБЯ УБЬЮ."
+    
+    fl "Стой, Камбо успокойся, мы здесь не за ним, ты же помнишь?"
+    
+    f "Че вы там перекидываетесь, сопляки?"
+    
+    c "Отошёл!"
+    
+    f "Че?"
+
+    show k1:
+        align(1.5, 1.0)
+        linear 1.0 xalign 0.7
+
+    pause 1
+
+    show f1:
+        align(0.5, 0.5)
+        linear 0.2 yalign 3.0
+
+    play sound smash
+
+    c "Я его вырубил, пошли."
+
+    scene bg kitchen with wiperight_scene
+    
+    "Они должны быть у меня в комнате."
+    
+    scene bg room
+    
+    show mol2:
+        align(0.5, 3.0)
+    
+    "???" "Ухм... ухм... ухм."
+
+    c "Привет, успокойся, сейчас я тебя развяжу."
+    
+    "???" "Ухм..."
+
+    hide mol2
+
+    show mol1:
+        align(0.5, 3.0)
+
+    extend " Спасибо, этот урод всегда так делает."
+    
+    c "А почему ты не ушла?"
+
+    "???" "Он держит нас в плену."
+
+    "???" "Так ты Камбо да?"
+
+    c "Да. А когда вы с ним познакомились?"
+
+    "???" "2 года назад, он приехал в бар, там мы и познакомились."
+
+    c "Изменял маме когда она была жива, хмм, понятно."
+
+    c "А где Эйлин, и кстати, как тебя зовут?"
+
+    "???" "Молли."
+
+    mol "Она в другой комнате, пошли к ней."
+
+    scene bg masha_room with wiperight_scene
+
+    show mol1 at center
+
+    c "Значит, тут."
+
+    mol "Иди сюда, моя девочка."
+
+    hide mol1
+
+    show mol3
+
+    c "Вы хотите сбежать?"
+
+    mol "Да."
+
+    c "Тогда пошлите с нами."
+
+    mol "Пошли."
+
+    scene bg village with wiperight_scene
+
+    show mol3 at r with dissolve
+
+    c "Флинн, мы тут. Пошли пока он не встал."
+
+    show fl5 at center with dissolve
+
+    fl "Ага."
+
+    scene bg room2 with wiperight_scene
+
+    show mol1 at l
+
+    show fl1 at center
+
+    mol "И так, это чей дом?"
+
+    fl "Мой, Он у меня живет."
+
+    mol "А кто ты собственно?"
+
+    c "Это Флинн, он мне помог."
+
+    fl "Да..."
+
+    mol "И что вы собираетесь делать?"
+
+    c "Хмм, Флинн я не подумал."
+
+    mol "У меня есть знакомый, который может делегировать нас в Америку."
+
+    fl "А ты можешь с ним связаться?"
+
+    mol "Да конечно, щас."
+
+    hide mol1 with dissolve
+
+    pause 3
+
+    show mol1 at l with dissolve
+
+    mol "Завтра мы едем в Америку "
+
+    fl "Ладно, давайте спать."
+
+    c "Ага, давайте, спокойной ночи, я на полу Флинн ты у себя, вы спите на кровати."
+
+    mol "Поняла, спокойной ночи."
+
+    scene black with fade
+
+    pause 3
+
+    scene bg room2 with fade
+
+    play music deepcare loop
+
+    "Я проснулся, время 7:00, у меня есть время попрощаться со всеми до завтра. Хм, с кем бы попрощатся..."
+
+    if deal:
+        "Точно павел, поеду к нему."
+        scene black with fade
+        pause 3
+        jump byepavel
+    elif deal_2:
+        jump byealexey
+
+label byepavel:
+
+    scene bg pavel_home with wiperight_scene
+
+    play sound housebell
+
+    pause 3
+
+    c "Павел, вы там?"
+
+    p "Да, щас открою."
+
+    show p1 at center with dissolve
+
+    p "Привет! Давно не виделись, как дела?"
+
+    c "Нормально, а вы как?"
+
+    p "Я в порядке, у тебя что-то случилось?"
+
+    c "Я пришел попрощаться. Я уезжаю в Майами."
+
+    p "Ох, ну заходи."
+
+    scene bg pavel_room with wiperight_scene
+
+    show p1 at center with dissolve
+
+    p "Ну чтож рассказывай."
+
+    c "Я еду в Майами, со своим другом, мачехой и сестрой."
+
+    p "Отец, да?"
+
+    c "Ага...{w} Он избивал их."
+
+    p "А Флинн как? Жив."
+
+    c "Да он поправился. Мы вместе с ним едем."
+
+    #c "Да он поправился. Мы вместе с ним едим."
+
+    p "Ну удачи вам ребят, я надеюсь все будет хорошо."
+
+    c "Да...{w} Я тоже."
+
+    scene black with fade
+
+    pause 3
+
+    scene bg pavel_home with fade
+
+    show p1 at center with dissolve
+
+    p "Спасибо, что зашел, удачи тебе."
+
+    c "Спасибо, вам тоже."
+
+    scene black with fade
+
+    "Я попрощался с Павлом."
+
+    jump afterbye
+
+label byealexey:
+
+    scene bg alexey_home with wiperight_scene
+
+    play sound housebell
+
+    pause 3
+
+    c "Алексей, здарова, ты дома?"
+
+    a "Да...{w} Сейчас выйду."
+
+    pause 2
+
+    show a1 at center with dissolve
+
+    c "Привет."
+
+    a "Ты что-то хотел?"
+
+    c "Да...{w} Завтра я уезжаю."
+
+    a "А так ты пришел попрощаться? Заходи."
+    
+    scene bg alexey_home_inside with wiperight_scene
+
+    show a1 at center with dissolve
+
+    a "Ну так что случилось? Почему уезжаешь и куда?"
+
+    c "Если я не уеду... Я рискну жизнью всех знакомых."
+
+    a "А почему?"
+
+    c "Мой отец..."
+
+    a "Ааа...{w} Тот случай, помню ты про него говорил, когда ушел жить к Флинну."
+
+    c "Да..."
+
+    scene alexey_home with fade
+
+    pause 3
+
+    scene a1 at center with dissolve
+    
+    a "Спасибо, что зашел, давай...{w} Бывай."
+
+    c "Пока..."
+    
+    jump afterbye
+    
+label afterbye:
+
+    stop music fadeout 1
+    
+    scene room2 with fade
+
+    "Молли и Эйлин спят вместе, я пожалуй тоже лягу."
+
+    scene black with fade
+
+    pause 3
+
+    scene black
+
+    play music miracle_of_crowbar loop
+
+    show fl1:
+        xalign 0.5
+        yalign 0.0
+        zoom 1.5
+    
+    fl "КАМБО, ВСТАВАЙ, ПОЖАР."
+
+    c "Флинн, че мать его происходит?"
+
+    fl "бежим, нет времени объяснять!"
+
+    scene room2 with fade
+
+    show fl1 at center with dissolve
+
+    c "А где Молли и Эйлин."
+
+    play sound eileen_scream
+
+    "Твою мать."
+
+    c "Им надо помочь."
+
+    c "Флинн, давай его."
+
+    fl "Ага, на."
+
+    pause 3
+
+    c "Пошли."
+
+    scene bg fire at slow_shaking with wiperight_scene
+
+    show mol3 at r
+
+    show f1 at center
+
+    c "Твою мать, все горит."
+
+    fl "Смотри."
+
+    f "Иди сюда чертовка."
+
+    fl "Камбо стреляй."
+
+    $ renpy.music.set_volume(0.2, delay=1.5, channel='music')
+
+    play sech shock loop
+
+    show vignette_effect with dissolve
+
+    show colt:
+        align(0.5, 0.0)
+        ease 0.5 yalign 0.5
+
+    call screen clickable_up_text
+
+    $ renpy.pause(0.2, hard=True)
+    
+    play sound shoot
+
+    scene black with fade
+
+    "Ебать..."
+
+    fl "Бежим!"
+
+    pause 6
+
+    stop sech 
+
+    stop music fadeout 0.5
+
+    play sound airport
+
+    "Где мы вашу мать?"
+
+    c "Флинн?"
+
+    scene lap_side with fade
+
+    mol "[player_name], мы сбежали в Майами."
+
+    pause 1
+
+    c "Что твою мать?" 
+    
+    c "Нас при первой возможности, либо вернут, либо этот полудурашный папаша, напишет заяву и мы будем в розыске интерпола."
+
+    fl "Не ссы. Мы все уладили с ней."
+
+    c "Как понять уладили?"
+
+    c "И почему я на твоих коленях?"
+
+    mol "Ой, прости, нам пришлось лететь с 2 билетами, на тебя не хватило - мы тебе пронесли."
+
+    c "Мою жирную тушу?"
+
+    mol "Ну, не ври."
+
+    scene airport with dissolve
+
+    show mol1 at center with dissolve
+
+    show fl3 at l with dissolve
+
+    pause 1
+
+    mol "На самом деле...{w} Я гражданка США."
+
+    c "Твою мать..."
+
+    scene black with fade
+
+    pause 3
+
+    scene airport with fade 
+
+    show mol1 at center with dissolve
+
+    show fl3 at l with dissolve
+
+    c "Я понял...{w} Ты поехала отдыхать в Россию, да? Но встретила его... {w} Ужас..."
+
+    fl "По другому и не сказать..."
+
+    c "А у тебя то хоть хата есть?"
+
+    mol "Да, в районе Майами Севера."
+
+    c "Неплохой район..."
+
+    c "А почему мы все еще тут?"
+
+    fl "Ждем такси."
+
+    c "А ну окей..."
+
+    scene black with fade
+
+    pause 2.0
+
+    "Что это вообще было?"
+
+    "Ладно, с меня хватит."
+
+    hide window
+
+    pause 3
+
+    "Мы поехали домой..."
+
+    scene bg molli_house with wiperight_scene
+
+    "Ух ты...{w} Ну неплохо..."
+
+    show fl2 at center with dissolve
+
+    fl "Молли, откуда у твоего знакомого такая хата?"
+
+    show mol3 at l with dissolve
+
+    mol "Квартира!"
+
+    fl "А, д-да, прости..."
+
+    mol "Он работал в полиции, ему платят пособие."
+
+    c "Полиция?"
+
+    mol "Не бойся, от него проблем не будет."
+
+    c "Ладно, кстати. А что с документами?"
+
+    mol "Ну...{w} Мы как раз решили сделать их сегодня. Тот знакомый решился, нам помочь..."
+
+    mol "Насчет документов...{w} Вы не можете использовать настоящие имена... Так что надо придумать."
+
+    scene bg molli_house at slow_shaking
+
+    show mol3 at l
+
+    show fl2 at center 
+
+    show vignette_effect with dissolve
+
+    play music shock loop
+
+    fl "Я Флинн!"
+
+    c "Так ты и так Флинн?"
+
+    fl "Ты с ума сошел?"
+
+    "Не понял..."
+
+    c "А я кто?"
+
+    mol "Ты будешь хмм...{w} Пока летели я читала газету про ритуал 'Камбо'... {w} Давай ты - {i}Камбо{/i}."
+
+    $ renpy.notify("Камбо - это традиционная шаманская практика и вид альтернативной медицины, в ходе которой на тело наносится ядовитая слизь тропической лягушки.")
+
+    c "..."
+
+    fl "А малышка, давайте - Эйлин."
+
+    c "Я сошел с ума? Какого хуя?"
+
+    mol "[player_name]!"
+
+    scene black with fade
+
+    stop music
+
+    scene bg village with fade
+
+    show m4 at center
+
+    "???" "[player_name], почему ты не разговариваешь со мной?"
+
+    "???" "Поговори пожалуйста..."
+
+    c "Дело не в том что я не хочу..."
+
+    c "Я устал говорить."
+
+    scene bg katcheli with fade
+
+    show m1 at center 
+
+    pause 2
+
+    show m1:
+        xalign 0.5 yalign 1.0
+        linear 0.6 xalign 1.0
+
+    show fl4 at l with dissolve
+
+    "???" "Здрасте"
+
+    m "Мы тебя знаем?"
+
+    "???" "Нет, но можем познакомиться."
+
+    "[flinn_name]" "Я [flinn_name]."
+
+    "[flinn_name]" "А кто вы?"
+
+    m "Маша."
+
+    m "Он не говорит, его зовут [player_name]"
+
+    "[flinn_name]" "Понял"
+
+    scene bg palata with fade
+
+    show med3 with dissolve
+
+    med "Привет, ты после операции, как ты?"
+
+    med "У вас нож застрял в спине. Ты чуть не умер... Радуйся."
+    
+    med "Я пришел спросить. Нам пришлось делать операцию незаконно, или ты бы умер..."
+
+    med "Как вас зовут?"
+    
+    pause 3
+
+    med "Молчите? Ну ладно."
+
+    med "А та девушка, кхм, которая была с вами...\nЯ соболезную, она умерла от остановки сердца.\nВ крови нашли передоз сердечными лекарствами, вы что-то знаете?"
+
+    c "М-маша..."
+
+    med "Ее имя Маша. Соболезную, друг."
+
+    med "Так расскажешь, что произошло?"
+
+    pause 3
+    
+    med "Ну ладно, врядли ты заговоришь..."
+
+    med "Xм, у тебя есть паспорт?"
+   
+    scene bg palata2 with dissolve
+
+    show passport:
+        xalign 0.5 yalign 1.0
+        linear 0.7 yalign 0.5
+    
+    pause 3
+    
+    med "Угу."
+
+    hide passport
+
+    med "Хорошо, теперь выпейте это и отдыхайте."
+
+    scene bg palata with fade
+
+    show med1 with dissolve
+
+    med "Ну, снова здравствуй."
+
+    med "Хочешь, порадую тебя?"
+
+    med "Завтра твоя выписка."
+
+    c "А как вас зовут?"
+
+    med "Меня-то? Павел."
+
+    c "Спасибо, Павел."
+
+    p "Я вижу у тебя явные проблемы с психикой, ты можешь заполнить это пожалуйста?"
+
+    c "..."
+
+    window hide
+
+    show test:
+        xalign 0.5 yalign 1.5
+        linear 0.7 yalign 1.0
+
+    pause
+
+    show test2 with dissolve
+
+    pause
+
+    show test3 with dissolve
+
+    pause
+
+    show test4 with dissolve
+
+    pause
+
+    show test5 with dissolve
+
+    hide test with dissolve
+
+    hide test1 with dissolve
+
+    hide test2 with dissolve
+
+    hide test3 with dissolve
+
+    hide test4 with dissolve
+
+    hide test5 with dissolve
+
+    p "Ага..."
+
+    pause 3
+
+    hide med1 with dissolve
+
+    play sound pavel_call
+
+    pause 3
+
+    stop sound
+
+
+    p "Але... Дело по нему... я в ахуе, у него тесты выявляют чушь либо он ржет, либо он на серьезе."
+
+    p "Он привлёк поего брата в разговор, как я понял он сказал что моего брата зовут - Флинн, a не [flinn_name]."
+
+    p "Я 100%% уверен что это [flinn_name], по моей памяти только у нас из всех в деревне у отца была Коха."
+
+    p "А еще та вторая девушка, c которой он был он сказал что она самоубилась...{w} Это пипец, я попробую с ним разобраться, он как-никак как друг моего брата...{w} Да и вроде человек не плохой."
+
+    scene black with fade
+
+    "Я умер? Я сошел с ума? Какого хера? То есть... Они никогда не были Флинном, Эйлин. А я...{w} Не был Камбо."
+
+    "???" "[player_name]!"
+
+    "???" "Камбо..."
+
+    scene bg molli_house with fade 
+
+    pause 3
+
+    show mol1 at center with dissolve
+
+    show fl3 at l with dissolve
+
+    c "Расскажите! Может вы что-то еще скрываете!?"
+
+    fl "[player_name] мы не знаем с кем ты нас спутал. Но ты забыл? Я твой друг. Мы пережили вместе смерть твоей сестры."
+    
+    c "Имена!"
+
+    fl "Я - [flinn_name], она - Молли, малышка - [eileen_name]..."
+
+    c "Хах ну конечно, а кто я?"
+
+    mol "Ты [player_name]..."
+
+    c "Мда..."
+
+    "Простите, я соврал вам. Я не был Камбо, я был [player_name]."
+
+    c "Ребят я пойду посплю, я устал."
+
+    fl "Бро, прости нас..."
+
+    c "Нет, вы простите меня."
+
+    c "Я все время не знал ваши имена, даже свое..."
+
+    c "Ладно...{w} Я пойду спать..."
+
+    scene black with fade
+
+    pause 3
+
+    "Я уснул..."
+
+    pause 3
+
+    jump day_in_miami_2
+
+label day_in_miami_2:
+
+    "Вчера был ужасный день. Надо пожалуй поговорить с ними..."
+
+    scene bg room3 with fade
+
+    "Но блять кто я такой вообще?"
+
+    "Маши не было никогда? Что вообще случилось?"
+
+    scene bg kitchen_miami with wiperight_scene
+
+    show mol1 at center with dissolve
+
+    show fl2 at l with dissolve
+
+    c "Доброе утро..."
+
+    fl "Доброе."
+
+    c "Надо поговорить..."
+
+    fl "Надо..."
+
+    c "Расскажите все что произошло."
+
+    fl "Дело было так...{w} Вы с Машей гуляли, и я проходил мимо. Решил познакомиться с вами. Мы искали парт-тайм для того чтобы выплатить лечение нашим родителям."
+
+    fl "Мы связались с старцом, как мы с ней узнали он Сэм Метти Старший. Он хотел убить нас и изнасиловать Машу."
+
+    c "Мы его убили..."
+
+    fl "Да, ты прав...{w} После этого Маша, того...{w} И ты попал в больницу, после твоего выхода ты год жил с отцом и переехал ко мне..."
+
+    fl "Мы спасли их, ну и дальше ты знаешь."
+
+    c "Ужас..."
+
+    c "Но почему? Почему я ничего не знал о вас?"
+
+    mol "После анонсирования диагноза, твое когнитивное восприятие изменилось."
+
+    if deal == True:
+        mol "Твой знакомый диагностировал у тебя ангедонию, меланхоличную депрессию и шизофрению..."
+    else:
+        mol "У меня было предположение, что у тебя шиза."
+        mol "Может еще что-то."
+
+    mol "До выстрела в отца ты не с кем не говорил, только переписывался с [flinn_name] тоесть... с Флинном."
+
+    c "Я в шоке..."
+
+    mol "Мы приготовили яйца на всех, ты будешь?"
+
+    menu:
+        "Да":
+            c "Да, почему бы и нет?"
+            jump eat_eggs
+        "Нет":
+            c "Я пойду осмотрюсь в новом городе."
+            fl "Только не попадись!"
+            c "Ага."
+            jump go_to_investigate
+
+label eat_eggs:
+
+    show mol1 at center
+
+    show fl2 at l
+
+    mol "Давай, щас наложу."
+
+    c "Спасибо..."
+
+    scene black with fade
+
+    pause 3
+
+    "Я поел яйца."
+
+    scene bg kitchen_miami with fade
+
+    show fl2 at center with dissolve
+
+    c "Я пойду осмотрюсь в новом городе."
+
+    fl "Только не попадись!"
+
+    c "Ага."
+
+    jump go_to_investigate
+
+label go_to_investigate:
+
+    scene bg miami with wiperight_scene
+
+    "Майами, неплохой город...{w} Интересно, он найдет нас?"
+
+    scene black with fade
+
+    "Я прошелся по улице."
+
+    pause 3
+
+    scene bg bel_harbor with fade
+
+    "Я потерялся."
+
+    "О это что Молли?"
+
+    show mol1 at center with dissolve
+
+    c "Привет."
+
+    mol "Привет."
+
+    mol "Ты что тут делаешь?"
+
+    c "Гулял, знакомился с городом."
+
+    mol "Ааа, я поняла. Ну тут красиво, если ты хотел это понять."
+
+    c "Ну, я понимаю."
+
+    pause 3
+
+    mol "Расскажи про себя."
+
+    c "Ну...{w} Вы и так знаете, моя мать болела, я впал в лютую депрессию."
+
+    mol "Я слышала, ты убил человека, так ли это?"
+
+    menu:
+        "Да":
+            "Я признался Молли, я чувствую ее доверие."
+            jump molli_kambo_talk
+        "Нет.":
+            jump molli_kambo_talk
+
+label molli_kambo_talk:
+
+    mol "Ну, я поняла."
+
+    c "А вы, расскажите про себя."
+
+    mol "О...{w} Ну мне нечего особо говорить."
+
+    mol "Я родилась в Америке, и переехала жить в Россию, заинтересовала аура России."
+
+    c "Хах, скажу так - в России ловить нечего."
+
+    mol "Это я уже поняла."
+
+    c "А что дальше?"
+
+    mol "Ну после, я приехала в какой-то бар."
+
+    mol "Встретила твоего отца. Мне стало его жалко, я дала ему визитку."
+
+    mol "В момент смерти твоей матери, он мне позвонил, я приехала, ну...{w} Ты понимаешь что дальше случилось..."
+
+    menu:
+        "Ты его поддержала?":
+            mol "Ну..."
+            jump back_to_home
+        "Половой акт?":
+            mol "..."
+            "Кажется Молли покраснела."
+            jump back_to_home
+
+label back_to_home:
+
+    mol "Впрочем, не будем об этом."
+
+    mol "Пошли домой, а то начинает темнеть..."
+
+    scene black with fade
+
+    pause 3
+
+    "Вы отправились с Молли домой."
+
+    pause 3
+
+    scene bg molli_house with fade
+
+    "Вы пришли и легли спать."
+
+    scene black with fade
+
+    jump third_day_in_miami
+
+label third_day_in_miami:
+
+    "Хмм, что бы сегодня поделать..."
+
+    pause 3
+
+    "Полагаю нечего."
+
+    "Тогда пойду на балкон, послушаю музыку."
+
+    scene bg balkon with wiperight_scene
+
+    "Какую бы песню выбрать?"
+
+    menu:
+        "Kambo Mood":
+            "Да, то что нужно. послушаю и позалипаю в теле"  
+            "А точно у меня же только плеер остался..."
+            "Ну тогда просто посмотрю на вида"
+            window hide
+            $ ex1 = True
+            jump listen_song
+        "Forever":
+            "Ну... {p} Неплохо!"
+            "Полюбуюсь на виды!"
+            window hide
+            $ ex2 = True
+            jump listen_song
+        "Idk":
+            "..."
+            window hide
+            $ ex3 = True
+            jump listen_song
+        "Не слушать":
+            $ no_listen = True
+            jump after_songs
+
+label listen_song:
+    
+    if ex1 == True:
+        $ _game_menu_screen = None
+        $ quick_menu = False
+        play music kambo_mood
+        $ renpy.pause(76, hard=True)
+        $ _game_menu_screen = "save"
+        $ qick_menu = True
+        stop music
+        jump after_songs
+    
+    elif ex2 == True:
+        $ _game_menu_screen = None
+        $ quick_menu = False
+        play music forever
+        $ renpy.pause(240, hard=True)
+        $ _game_menu_screen = "save"
+        $ qick_menu = True
+        stop music
+        jump after_songs
+
+    elif ex3 == True:
+        $ _game_menu_screen = None
+        $ quick_menu = False
+        play music idk
+        $ renpy.pause(110, hard=True)
+        $ _game_menu_screen = "save"
+        $ qick_menu = True
+        stop music
+        jump after_songs
+
+label after_songs:
+
+    if ex1 == True:
+        "Это было странно!"
+
+    elif ex2 == True:
+        "Норм."
+
+    elif ex3 == True:
+        "Где-то я это уже слышал..."
+
+    else:
+        "Я решил не слушать."
+
+    "Ну ладно пойду, посмотрю как они..."
+
+    scene bg kitchen_miami with wiperight_scene
+
+    show fl2 at center with dissolve
+
+    fl "..."
+
+    c "А где она?"
+
+    fl "Ушла куда-то..."
+
+    pause 3
+
+    c "..."
+
+    pause 3
+
+    fl "..."
+
+    c "Не расскажешь как вы меня пронесли?"
+
+    fl "Дело было так..."
+
+    scene bg hospital with fade
+
+    show med2 at center with dissolve
+
+    fl "ВЫРЕЖ ПОЖАЛУЙСТА ПАШ!"
+
+    p "[flinn_name] ты с ума сошел?"
+
+    fl "ЭТО ВОПРОС ЖИЗНИ И СМЕРТИ!"
+
+    p "Кто это там у вас?"
+
+    fl "Это... [player_name]."
+
+    p "..."
+
+    c "..."
+
+    fl "Пожалуйста..."
+
+    p "Тоесть, я правильно понимаю, что ты хочешь выкачать свой жир чтобы пронести его как свое пузо?"
+
+    fl "Да..."
+
+    p "Хорошо... Я это делаю только ради вас двоих."
+
+    fl "Спасибо Паш."
+
+    scene black with fade
+
+    scene bg kitchen_miami with fade
+
+    c "Чувак ты сумасшедший!"
+
+    show fl2 at center with dissolve
+
+    fl "Мне пришлось сделать это ради тебе брат..."
+
+    c "Спасибо брат."
+
+    pause 3
+
+    mol "Я вернулась!"
+
+    c "Привет. А ты где была?"
+
+    show mol3 at r with dissolve
+
+    mol "Ходила мозги проветрить в кофейню."
+
+    c "А ну...{w} Конечно."
+
+    scene black with fade
+
+    "Похоже что разговор не выйдет."
+
+    "Я решил пойти спать."
+
+    pause 3
+
+    scene bg elektrostal with fade
+
+    play music kambo_mood loop
+
+    f "Зачем я вообще привязываюсь к ним?"
+
+    f "Да я знаю, Уилл сказал, но не всех же?"
+
+    f "К тому же вон девочка, вроде у меня не плохая получилась."
+
+    f "А вот {i}он{/i}, с ним будут проблемы, я уверен..."
+
+    show ya at center with dissolve
+
+    c "О чем говоришь пап?"
+
+    f "Да я о всяком... Не переживай сынок."
+
+    if deal == True:
+        scene bg pavel_room with fade
+        show p1 with dissolve
+        p "Ну вот и твоя первая консультация, я рад что ты пришел, а не проигнорил меня."
+        p "Мы провели независимый анализ..."
+        p "Я понимаю как ты все видишь, серо..."
+        p "Но у тебя же есть друзья?"
+        c "Только Флинн..."
+        p "Ну вот прогресс есть ты хотя бы заговорил."
+        p "Не расскажешь как там он?"
+        c "Он меня спас."
+        p "Отлично."
+        p "Ты знал что мы слабее без связей?"
+        p "Поэтому люди с друзьями всегда лучше одиночек."
+        p "Потому что это сила связей."
+        p "Сила та что нельзя понять."
+        p "Сила дикой карты."
+        c "..."
+        p "Хах, прости просто вспомнил одну фразу."
+        p "Ну ладно пропустим. Скажи ты любишь игры?"
+        c "После 14 не играю."
+        p "Ну здраво, там же учеба я понимаю и еще твой диагноз."
+        p "Как думаешь когда это началось?"
+        jump main_remember
+
+    else:
+        jump main_remember
+    
+label main_remember:
+    
+    scene main_remember with fade
+
+    c "Мамочка..."
+
+    mo "Сынок, позаботься пожалуйста о маше, если меня не станет..."
+
+    c "Да мамочка... Хорошо."
+
+    mo "[player_name] даже если ты не сможешь..."
+
+    mo "Знай что, мы все равно тебя любим."
+
+    mo "Мой рак не приговор сынок."
+
+    mo "Однажды ты найдешь ту кто тебя любит, но не забывай про нас."
+
+    scene main_remember at changed
+
+    mo "А теперь сынок, найди ее."
+
+    stop music fadeout 0.5
+
+    jump riviera_bich
+
+label riviera_bich:
+
+    scene bg riviera_bich with fade
+
+    "Тут неподалеку, киоски."
+
+    "Пойду загляну, в один из них."
+
+    scene black with fade
+
+    pause 3
+
+    scene bg riviera_bich with fade
+
+    show cig zorder 100
+
+    show smoke zorder 99
+
+    show mol1 with dissolve
+
+    "Через дым от сигареты я увидел мимо проходящую девушку. Это была Молли."
+
+    show smoke 
+
+    show mol1 zorder 99 with dissolve
+
+    mol "Привет."
+
+    c "Ага..."
+
+    mol "Куришь?"
+
+    c "Еще с 16, ну после больницы."
+
+    c "Кстати, что за повязка?"
+
+    mol "Ты про глазную?"
+
+    mol "Для стиля ношу, кстати, у меня такие же глаза как и у тебя."
+
+    c "А снимешь?"
+
+    mol "Чуть попозже."
+
+    c "Ладно."
+
+    pause 2
+
+    c "Знаешь, ну...{w} Тогда, два года назад я даже не подозревал...{w} Ну про него."
+
+    mol "Я понимаю, он меня тоже обманул..."
+
+    c "Этот гандон заслуживает смерти."
+
+    c "Может вернемся и убьем его?"
+
+    mol "Прекрати! Чем ты лучше его, если это сделаешь."
+
+    mol "Его и так - либо посадят, либо он сопьется."
+
+    c 'Да, ты тут права, прости...'
+
+    c "Просто, он животное отбросок общества. От таких надо избавляться."
+
+    mol "Да тут я согласна...{w} Но все же Камбо...{w} Я верю, что в тебе есть человечность."
+
+    c "Прежние мы мертвы."
+
+    mol "Да ты прав, ты {i}Камбо{/i}"
+
+    scene facetoface with fade
+
+    pause 5
+
+    menu:
+        "Поцеловать.":
+            $ kiss = True
+            jump kiss_scene
+        "Позвать домой.":
+            $ kiss1 = True
+            c "Пошли до- {nw}"
+            pause 0.4
+            window hide
+            jump kiss_scene
+
+label kiss_scene:
+
+    if kiss == True:
+        scene black with fade
+        play sound kiss
+        pause 3
+        c "П-прости"
+        scene facetoface with dissolve
+        mol "Камбо..."
+        mol "Я кое что скажу."
+    elif kiss1 == True:
+        scene black with fade
+        play sound kiss
+        pause 3
+        "Ч-что."
+        scene facetoface with dissolve
+        mol "Прости..."
+        c "Молли..."
+        c "Я понимаю..."
+        mol "Ух, ну если так то. Я должна кое что сказать."
+
+    pause 3
+
+    mol "Я работаю первоклассным детективом в Майами."
+
+    c "Ч-что?"
+
+    mol "Прости, надо было это сразу сказать..."
+
+    c "Значит опять ложь?"
+
+    mol "Я соврала только по причине приезда в Россию и то что это квартира знакомого."
+
+    mol "Видишь-ли...{w} Я приехала туда по расследованию дела Metti-Family, а квартира была моя."
+
+    c "Я-я понял...{w} Пошли домой."
+
+    scene black with fade
+
+    pause 3
+
+    "Мы пошли домой."
+
+    scene molli_home_flinn with fade
+
+    mol "Ооо...{w} Смотри, флинн укачивал ее и уснул вместе."
+
+    mol "Как мило!"
+
+    c "Да..."
+
+    mol "Пошли поговорим на балконе."
+
+    scene black with fade
+
+    pause 3
+
+    scene bg balkon_night with fade
+
+    c "О чем?"
+
+    mol "Расскажи про свою сестру."
+
+    jump childhood
+
+label childhood:
+
+    scene bg beach with fade
+
+    show ym with dissolve
+
+    m "Эй [player_name], Пошли купаться!"
+
+    c "Пошли Маш!"
+
+    scene swiming with dissolve
+
+    m "Йуху!"
+
+    c "Оу, аккуратно. Ты что хочешь поиграть в водную войну?"
+
+    m "Ты нарываешься!"
+
+    scene black with fade
+
+    play sound water
+
+    c "Эй!"
+
+    m "Ноль меткости у тебя!"
+
+    scene swiming
+
+    m "Я победила!"
+    
+    c "Играли бы мы в мортал комбат я бы победил!"
+
+    m "Не-а, flawless-victory!"
+
+    c "Эй!"
+
+    jump confession
+
+label confession:
+
+    scene bg balkon_night with fade
+
+    show mol1 with dissolve
+
+    c "Ну она...{w} Была жизнерадостной, а еще хвастуньей, как вспомню ту нашу пляжку.{w} Она слишком была добра для такого мира..."
+
+    mol "Да... Теперь я поняла."
+
+    window hide
+
+    pause 3
+
+    show confession with dissolve
+
+    mol "Дай свою руку."
+
+    c "А?"
+
+    mol "Дай! Я тебе кое-что покажу."
+
+    c "Н-ну...{w} Хорошо."
+
+    show black with fade
+
+    mol "Представь что ты держишь ее за руку."
+
+    mol "Что-ты чувствуешь?"
+
+    c "Нежность...{w} Мягкость...{w} Тоску..."
+
+    mol "Это очень хорошо."
+
+    mol "Какие чувства ты к ней испытавал?"
+
+    c "Любил, как сестру..."
+
+    mol "Правильно."
+
+    mol "Как думаешь она тебя любила?"
+
+    c "Да."
+
+    mol "Супер! А теперь. Камбо."
+
+    c "А?"
+
+    show bg balkon_night with fade
+
+    show mol1 with dissolve
+
+    mol "Нас ждет многое ты понимаешь?"
+
+    c "Ну...{w} Да."
+
+    mol "Мы живем в городе с мафией, ты понимаешь?"
+
+    c "Да!"
+
+    mol "Вот и прекрасно, а еще..."
+
+    c "Я люблю тебя."
+
+    pause 3
+
+    mol "Я тоже."
+
+    call end1 #End's here
+
+    #It's empty
+
+    #The next line will be empty too, i don't see any sence to continue

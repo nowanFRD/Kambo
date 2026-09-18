@@ -1,0 +1,13 @@
+translate english python:
+    name_o = "Elder"
+    name_mo = "Mom"
+    name_m = "Masha"
+    name_c = "Kambo"
+    name_f = "Father"
+    name_me = "Mother Eileen"
+    name_t = "Taxi Driver"
+    name_mol = "Molli"
+    name_fl = "Flinn"
+    name_med = "Doctor"
+    name_p = "Pavel"
+    name_a = "Alexei"

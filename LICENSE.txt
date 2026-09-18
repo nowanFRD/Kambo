@@ -1,0 +1,10 @@
+## License
+
+This project is an open-source game. To accommodate both the original source code and the various artistic assets, it uses the following licensing structure:
+
+* **Source Code:** Almost all logic, scripts, and original code are licensed under the **GNU General Public License v3.0 (GPL-3.0)**. but some logic is not fully licensed under this license. more details - [COPYRIGHTS.md] (COPYRIGHTS.md) file.
+* **Game Assets:** 
+  * **Original Assets:** Any original art, music, or story elements created specifically for this game are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**.
+  * **Third-Party Assets:** This game uses external assets (textures, models, audio, fonts) obtained from open-source or free repositories. Each asset remains the property of its respective creator and is used under its original license. 
+
+Detailed credits, authors, and specific licenses for all third-party assets can be found in the [COPYRIGHTS.md](COPYRIGHTS.md) file.

@@ -1,0 +1,13 @@
+translate japanese python:
+    name_o = "{font=MPLUSRounded1c-Black.ttf}長老{/font}"
+    name_mo = "{font=MPLUSRounded1c-Black.ttf}お母さん{/font}"
+    name_m = "{font=MPLUSRounded1c-Black.ttf}マーシャ{/font}"
+    name_c = "{font=MPLUSRounded1c-Black.ttf}カンボ{/font}"
+    name_f = "{font=MPLUSRounded1c-Black.ttf}父親{/font}"
+    name_me = "{font=MPLUSRounded1c-Black.ttf}アイリーン院長{/font}"
+    name_t = "{font=MPLUSRounded1c-Black.ttf}タクシー運転手{/font}"
+    name_mol = "{font=MPLUSRounded1c-Black.ttf}モリ{/font}"
+    name_fl = "{font=MPLUSRounded1c-Black.ttf}フリン{/font}"
+    name_med = "{font=MPLUSRounded1c-Black.ttf}医師{/font}"
+    name_p = "{font=MPLUSRounded1c-Black.ttf}パベル{/font}"
+    name_a = "{font=MPLUSRounded1c-Black.ttf}アレクセイ{/font}"
