@@ -508,7 +508,14 @@ label afterbye:
         align(0.5, 0.0)
         ease 0.5 yalign 0.5
 
-    call screen clickable_up_text
+    if _preferences.language == "english":
+        call screen clickable_up_text_eng
+
+    elif _preferences.language == "japanese":
+        call screen clickable_up_text_jp
+
+    elif _preferences.language == None:
+        call screen clickable_up_text
 
     $ renpy.pause(0.2, hard=True)
     
@@ -774,37 +781,100 @@ label afterbye:
 
     window hide
 
-    show test:
-        xalign 0.5 yalign 1.5
-        linear 0.7 yalign 1.0
 
-    pause
+    if _preferences.language == "japanese":
 
-    show test2 with dissolve
+        show jptest:
+            xalign 0.5 yalign 1.5
+            linear 0.7 yalign 1.0
 
-    pause
+        pause
 
-    show test3 with dissolve
+        show jptest2 with dissolve
 
-    pause
+        pause
 
-    show test4 with dissolve
+        show jptest3 with dissolve
 
-    pause
+        pause
 
-    show test5 with dissolve
+        show jptest4 with dissolve
 
-    hide test with dissolve
+        pause
 
-    hide test1 with dissolve
+        show jptest5 with dissolve
 
-    hide test2 with dissolve
+        hide jptest with dissolve
 
-    hide test3 with dissolve
+        hide jptest2 with dissolve
 
-    hide test4 with dissolve
+        hide jptest3 with dissolve
 
-    hide test5 with dissolve
+        hide jptest4 with dissolve
+
+        hide jptest5 with dissolve
+
+    elif _preferences.language == "english":
+        show entest:
+            xalign 0.5 yalign 1.5
+            linear 0.7 yalign 1.0
+
+        pause
+
+        show entest2 with dissolve
+
+        pause
+
+        show entest3 with dissolve
+
+        pause
+
+        show entest4 with dissolve
+
+        pause
+
+        show entest5 with dissolve
+
+        hide entest with dissolve
+
+        hide entest2 with dissolve
+
+        hide entest3 with dissolve
+
+        hide entest4 with dissolve
+
+        hide entest5 with dissolve
+
+    else:
+        show test:
+            xalign 0.5 yalign 1.5
+            linear 0.7 yalign 1.0
+
+        pause
+
+        show test2 with dissolve
+
+        pause
+
+        show test3 with dissolve
+
+        pause
+
+        show test4 with dissolve
+
+        pause
+
+        show test5 with dissolve
+
+        hide test with dissolve
+
+        hide test2 with dissolve
+
+        hide test3 with dissolve
+
+        hide test4 with dissolve
+
+        hide test5 with dissolve
 
     p "Ага..."
 
@@ -817,7 +887,6 @@ label afterbye:
     pause 3
 
     stop sound
-
 
     p "Але... Дело по нему... я в ахуе, у него тесты выявляют чушь либо он ржет, либо он на серьезе."
 

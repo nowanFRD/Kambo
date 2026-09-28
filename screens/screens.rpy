@@ -763,7 +763,7 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("{color=#000000}Пропуск{/color}")
+                    label _("Пропуск")
                     textbutton _("Всего текста") action Preference("skip", "toggle")
                     textbutton _("После выборов") action Preference("after choices", "toggle")
                     textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
@@ -1661,3 +1661,27 @@ screen clickable_up_text_end():
         text_color col
         hovered SetScreenVariable("col", "#00FF00")
         unhovered SetScreenVariable("col", "#fff")
+
+screen clickable_up_text_eng():
+    tag ui_clickable
+    zorder 100
+
+    default col = "#000000"
+
+    textbutton "Shoot..." action Return(True):
+        align (0.5, 0.7)
+        text_color col
+        hovered SetScreenVariable("col", "#ff0000")
+        unhovered SetScreenVariable("col", "#000000")
+
+screen clickable_up_text_jp():
+    tag ui_clickable
+    zorder 100
+
+    default col = "#000000"
+
+    textbutton "{font=MPLUSRounded1c-Black.ttf}撃って{/font}" action Return(True):
+        align (0.5, 0.7)
+        text_color col
+        hovered SetScreenVariable("col", "#ff0000")
+        unhovered SetScreenVariable("col", "#000000")

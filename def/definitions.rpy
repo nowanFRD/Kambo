@@ -129,10 +129,6 @@ image test:
     "images/test.jpg"
     fit "contain"
     xysize (497, 702)
-image test1:
-    "images/test1.jpg"
-    fit "contain"
-    xysize (497, 702)
 image test2:
     "images/test2.jpg"
     fit "contain"
@@ -147,5 +143,47 @@ image test4:
     xysize (497, 702)
 image test5:
     "images/test5.jpg"
+    fit "contain"
+    xysize (497, 702)
+
+image entest:
+    "images/entest.jpg"
+    fit "contain"
+    xysize (497, 702)
+image entest2:
+    "images/entest2.jpg"
+    fit "contain"
+    xysize (497, 702)
+image entest3:
+    "images/entest3.jpg"
+    fit "contain"
+    xysize (497, 702)
+image entest4:
+    "images/entest4.jpg"
+    fit "contain"
+    xysize (497, 702)
+image entest5:
+    "images/entest5.jpg"
+    fit "contain"
+    xysize (497, 702)
+
+image jptest:
+    "images/jptest.jpg"
+    fit "contain"
+    xysize (497, 702)
+image jptest2:
+    "images/jptest2.jpg"
+    fit "contain"
+    xysize (497, 702)
+image jptest3:
+    "images/jptest3.jpg"
+    fit "contain"
+    xysize (497, 702)
+image jptest4:
+    "images/jptest4.jpg"
+    fit "contain"
+    xysize (497, 702)
+image jptest5:
+    "images/jptest5.jpg"
     fit "contain"
     xysize (497, 702)

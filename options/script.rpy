@@ -12,7 +12,7 @@ default persistent.lang = True
 
 init python:
 
-    config.developer = True
+    config.developer = False
 
     config.rollback_enabled = False
 

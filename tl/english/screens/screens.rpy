@@ -7,7 +7,7 @@ translate english strings:
     new "History"
 
     # game/screens/screens.rpy:256
-    old "{color=#000000}Пропуск{/color}"
+    old "Пропуск"
     new "Skip"
 
     # game/screens/screens.rpy:257
