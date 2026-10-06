@@ -12,9 +12,9 @@ default persistent.lang = True
 
 init python:
 
-    config.developer = True
+    config.developer = False
 
-    config.rollback_enabled = True
+    config.rollback_enabled = False
 
     config.has_autosave = False
 
