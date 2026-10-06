@@ -29,8 +29,8 @@ define audio.smash = "audio/sfx/smash.ogg"
 define audio.smashing = "audio/sfx/smashing.ogg" 
 define audio.shock = "audio/sfx/shock.ogg"
 #constants
-define gui.textbox_background = Frame(Solid("#000000a8"), borders=Borders(2, 2, 2, 2))
-define gui.namebox_background = Frame(Solid("#ffffffa8"), borders=Borders(1, 1, 1, 1))
+define gui.textbox_background = Frame("gui/textbox.png", borders=Borders(2, 2, 2, 2))
+define gui.namebox_background = Frame(Solid("#4caf50a8"), borders=Borders(1, 1, 1, 1))
 define white_list_name = ["Камбо", "камбо","Kambo", "kambo", "Молли", "молли", "Molli", "molli", "Эйлин", "эйлин", "Eileen", "eileen"]
 #defaults
 default creations = ""

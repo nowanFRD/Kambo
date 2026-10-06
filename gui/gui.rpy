@@ -59,13 +59,13 @@ define gui.interface_text_color = '#000000'
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "TT2020StyleE-Italic.ttf"
 
 ## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "TT2020StyleE-Regular.ttf"
 
 ## Шрифт, используемый текстом вне игры.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "DejaVuSansMono-Bold.ttf"
 
 ## Размер нормального текста диалога.
 define gui.text_size = 22
@@ -99,7 +99,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
 
 ## Высота текстового окна, содержащего диалог.
-define gui.textbox_height = 148
+define gui.textbox_height = 140
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр и
 ## 1.0 — низ.
@@ -109,8 +109,8 @@ define gui.textbox_height = 148
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
-define gui.name_xpos = 120
-define gui.name_ypos = -4
+define gui.name_xpos = 155
+define gui.name_ypos = 20
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -134,7 +134,7 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 20
+define gui.dialogue_xpos = 40
 define gui.dialogue_ypos = 40
 
 ## Максимальная ширина текста диалога в пикселях.

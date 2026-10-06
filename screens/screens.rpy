@@ -132,9 +132,9 @@ style namebox_label is say_label
 
 style window:
     xalign 0.5
-    xsize 650
+    xsize 700
     xfill True
-    yoffset 610
+    yoffset 620
     ysize gui.textbox_height
     background gui.textbox_background
 style namebox:
@@ -274,13 +274,14 @@ style quick_button_text is button_text
 
 style quick_menu:
     xalign 0.5
-    yalign 1.0
+    yalign 1.1
 
 style quick_button:
     properties gui.button_properties("quick_button")
 
 style quick_button_text:
     properties gui.text_properties("quick_button")
+    outlines [ (1, "#39FF14", 0, 0) ]
 
 
 ################################################################################
@@ -304,17 +305,17 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Начать") action Start()
+            textbutton _("Начать") action Start() at navigations_zoom
 
         else:
 
-            textbutton _("История") action ShowMenu("history")
+            textbutton _("История") action ShowMenu("history") at navigations_zoom
 
-            textbutton _("Сохранить") action ShowMenu("save")
+            textbutton _("Сохранить") action ShowMenu("save") at navigations_zoom
 
-        textbutton _("Загрузить") action ShowMenu("load")
+        textbutton _("Загрузить") action ShowMenu("load") at navigations_zoom
 
-        textbutton _("Настройки") action ShowMenu("preferences")
+        textbutton _("Настройки") action ShowMenu("preferences") at navigations_zoom
 
         if _in_replay:
 
@@ -322,7 +323,7 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Главное меню") action MainMenu()
+            textbutton _("Главное меню") action MainMenu() at navigations_zoom
 
         #textbutton _("Об игре") action ShowMenu("about")
 
@@ -335,13 +336,13 @@ screen navigation():
                 "j_help.html" if _preferences.language == "japanese" else 
                 "help.html"
             )
-        )
+        ) at navigations_zoom
         
         if renpy.variant("pc"):
 
             ## Кнопка выхода блокирована в iOS и не нужна на Android и в веб-
             ## версии.
-            textbutton _("Выход") action Quit(confirm=not main_menu)
+            textbutton _("Выход") action Quit(confirm=not main_menu) at navigations_zoom
 
 
 style navigation_button is gui_button
@@ -354,6 +355,7 @@ style navigation_button:
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
 
+    outlines [ (1, "#39FF14", 0, 0) ]
 
 ## Экран главного меню #########################################################
 ##
@@ -757,7 +759,7 @@ screen preferences():
 
                     vbox:
                         style_prefix "radio"
-                        label _("{color=#000000}Режим экрана{/color}")
+                        label _("Режим экрана")
                         textbutton _("Оконный") action Preference("display", "window")
                         textbutton _("Полный") action Preference("display", "fullscreen")
 

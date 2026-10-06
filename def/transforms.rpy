@@ -51,6 +51,12 @@ init 1:
         pause 0.5
         linear 0.6 alpha 0
 
+    transform navigations_zoom:
+        on hover:
+            easein 0.15 zoom 1.15
+        on idle:
+            easeout 0.15 zoom 1.0
+
     define slow_dissolve = Dissolve(3.0)
 
     define wiperight_scene = MultipleTransition([False, wiperight, Solid("#000000"), Pause(1.0), Solid("#000000"), wiperight, True])

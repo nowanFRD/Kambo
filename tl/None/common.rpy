@@ -1,6 +1,6 @@
 ﻿# TODO: Translation updated at 2026-09-17 23:46
 
-translate english strings:
+translate None strings:
 
     # renpy/common/000statements.rpy:28
     old "Click to play the video."
@@ -496,55 +496,55 @@ translate english strings:
 
     # renpy/common/00gui.rpy:448
     old "Are you sure?"
-    new "Are you sure?"
+    new "Вы уверены?"
 
     # renpy/common/00gui.rpy:449
     old "Are you sure you want to delete this save?"
-    new "Are you sure you want to delete this save?"
+    new "Вы уверены, что хотите удалить это сохранение?"
 
     # renpy/common/00gui.rpy:450
     old "Are you sure you want to overwrite your save?"
-    new "Are you sure you want to overwrite your save?"
+    new "Вы уверены, что хотите перезаписать это сохранение?"
 
     # renpy/common/00gui.rpy:451
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new "Loading will lose unsaved progress.\nAre you sure you want to do this?"
+    new "Загрузка сбросит несохранённый прогресс. \nВы уверены, что хотите сделать это?"
 
     # renpy/common/00gui.rpy:452
     old "Are you sure you want to quit?"
-    new "Are you sure you want to quit?"
+    new "Вы уверены, что хотите выйти?"
 
     # renpy/common/00gui.rpy:453
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
+    new "Вы уверены, что хотите вернуться в главное меню?\n Это сбросит несохранённый прогресс."
 
     # renpy/common/00gui.rpy:454
     old "Are you sure you want to continue where you left off?"
-    new "Are you sure you want to continue where you left off?"
+    new "Вы уверены, что хотите продолжить откуда вышли?"
 
     # renpy/common/00gui.rpy:455
     old "Are you sure you want to end the replay?"
-    new "Are you sure you want to end the replay?"
+    new "Вы уверены, что хотите закончить повтор??"
 
     # renpy/common/00gui.rpy:456
     old "Are you sure you want to begin skipping?"
-    new "Are you sure you want to begin skipping?"
+    new "Вы уверены, что хотите начать пропускать?"
 
     # renpy/common/00gui.rpy:457
     old "Are you sure you want to skip to the next choice?"
-    new "Are you sure you want to skip to the next choice?"
+    new "Вы уверены, что хотите пропустить до следующего выбора?"
 
     # renpy/common/00gui.rpy:458
     old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new "Are you sure you want to skip unseen dialogue to the next choice?"
+    new "Вы уверены, что хотите пропустить непросмотренный текст до следующего выбора?"
 
     # renpy/common/00gui.rpy:459
     old "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
-    new "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"
+    new "Это сохранения было сделано на другом устройстве. Злонамеренно созданные файлы сохранения могут сломать ваш компьютер. Вы доверяете создателю сохранений и всех кто мог делиться этим файлом?"
 
     # renpy/common/00gui.rpy:460
     old "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
-    new "Do you trust the device the save was created on? You should only choose yes if you are the device's sole user."
+    new "Вы доверяете устройству на котором был создан сейв? Вы должны выбрать да, если вы единственный владеете этим устройством."
 
     # renpy/common/00keymap.rpy:325
     old "Failed to save screenshot as %s."
